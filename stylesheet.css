@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: cursive;
+
+}
+body{
+    background-color: black;
+    color: aliceblue;
+
+}
+#header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("moon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.container{
+    padding: 10px 10%;
+}
+nav{display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap
+    
+    
+}
+.logo1{
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 700;
+    
+    
+}
+.logo1  span{
+    color:#00ff00;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#00ff00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    margin-top: 20%;
+    font-size: 30px;
+    
+}
+.headertext h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.headertext h1 span{
+    color:#00ff00;
+}
+/**about**/
+.about{
+    padding: 80px 0;
+    color: aliceblue;
+
+}
+.row{display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15%;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+   font-size: 60px;
+   font-weight: 600; 
+
+
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px ;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #00ff00;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style:disc;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #00ff00;
+    font-size: 25px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/**contact.....................................**/
+#contact{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-image: url("moon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    
+  }
+
+.contact-left{
+    flex-basis: 100%;
+}
+.contact-left p{
+    margin-top: 50px;
+
+}
+.contact-left p i{
+    color: #00ff00;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+    display: flex;
+
+}
+.social-icon a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+.social-icon a i {
+    text-decoration: none;
+    font-size: 30px; 
+    margin-right: 15px;
+    color: #00ff00;
+    display: inline-block;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00ff00;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:aliceblue
+    transition:background 0.5s;
+}
+.btn:hover{
+    background: #00ff00;
+}
+.btn.btn2{
+    display: inline-block;
+    color: aliceblue;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 600;
+    
+}
