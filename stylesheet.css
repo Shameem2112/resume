@@ -13,7 +13,7 @@ body{
 #header{
     width: 100vw;
     height: 100vh;
-    background-image: url("plant.webp");
+    /*background-image: url("plant.webp");*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -154,7 +154,7 @@ nav ul li a:hover::after{
     bottom: 0;
     right: 0;
     width: 100%;
-    background-image: url("plant.webp");
+    /*background-image: url("plant.webp");*/
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
